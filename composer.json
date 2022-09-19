@@ -1,0 +1,22 @@
+{
+    "name": "test/ecs_sniffer_test",
+    "description": "A simple test project to discover issues with ECS & CodeSniffer",
+    "type": "project",
+    "require-dev": {
+        "symplify/easy-coding-standard": "^11.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/App/"
+        }
+    },
+    "authors": [
+        {
+            "name": "broadcoder"
+        }
+    ],
+    "scripts": {
+        "test:lint": "vendor/bin/ecs check --output-format=github --clear-cache"
+    },
+    "minimum-stability": "dev"
+}
