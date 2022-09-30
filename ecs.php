@@ -13,9 +13,6 @@ return static function (ECSConfig $ecsConfig): void {
     $ecsConfig->paths([
         __DIR__ . '/src',
     ]);
-    $ecsConfig->cacheDirectory('.ecs');
-    $ecsConfig->cacheNamespace('TestProject');
-    $ecsConfig->services()->set('github', GithubJsonOutputFormatter::class);
 
     $sniffers = [
         //UpperCaseConstantNameSniff::class,
