@@ -16,7 +16,7 @@
         }
     ],
     "scripts": {
-        "test:lint": "vendor/bin/ecs check --output-format=github --clear-cache"
+        "test:lint": "vendor/bin/ecs check"
     },
     "minimum-stability": "dev"
 }
